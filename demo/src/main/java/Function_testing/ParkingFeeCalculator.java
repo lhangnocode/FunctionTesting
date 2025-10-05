@@ -21,9 +21,9 @@ public class ParkingFeeCalculator {
             return "Invalid";
         }
 
-        //* */ Gửi trước 17h
+        //* Gửi trước 17h
         boolean before17Start = start < 17 * 60;
-        //* Gửi sau 17h
+        //* Lấy trước 17h
         boolean before17End = end < 17 * 60;
 
         return switch (userType) {
